@@ -1,0 +1,44 @@
+#botonMostrarPersonajes{
+    background-color: #b6eefc;
+    padding: 1rem 1.2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.divBotonesNavegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem;
+    .botonNavegacion{
+        background-color: #b6eefc;
+        padding: 1rem 0rem;
+        width: 12rem;
+        font-weight: 700;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        margin: 0rem 1rem;
+    }
+    .numeroPaginaActual{
+        @extend .botonNavegacion;      
+        width: 3rem;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .divBotonesNavegacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        .botonNavegacion {
+            margin: 0.5rem;
+        }
+    }
+}
+
+

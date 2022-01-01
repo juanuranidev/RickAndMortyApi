@@ -1,0 +1,31 @@
+.imagenTitulo{
+    width: 40rem;
+}
+
+#cabezaDeRickAntes{
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+
+#cabezaDeRickDespues{
+    @extend #cabezaDeRickAntes;
+    display: none;
+}
+
+#flecha{
+    display: none;
+    color: white;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {  
+    .imagenTitulo{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 576px) {  
+    .imagenTitulo{
+        width: 15rem;
+    }
+}

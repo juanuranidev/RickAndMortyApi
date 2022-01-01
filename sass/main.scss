@@ -1,0 +1,40 @@
+// Fuente
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+// Componentes
+@import "../sass/components/personaje";
+@import "../sass/components/botones";
+@import "../sass/components/imagenes";
+@import "../sass/layout/footer";
+
+html, body{
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #212837; 
+}
+
+.principal{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../img/fondodepantalla.png") no-repeat fixed center;
+}
+
+#personajes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

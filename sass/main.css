@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+.personaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 31.2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #b6eefc;
+  color: black;
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.personaje .imagenPersonaje {
+  height: 100%;
+}
+
+.personaje .imagenPersonaje img {
+  width: 15rem;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.personaje .informacionPersonaje {
+  height: 100%;
+  width: 100%;
+}
+
+.personaje .informacionPersonaje .tituloPersonaje {
+  margin: 1rem;
+  text-align: center;
+}
+
+.personaje .informacionPersonaje .tituloPersonaje h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.personaje .informacionPersonaje .tituloPersonaje h2 a {
+  color: black;
+  text-decoration: none;
+}
+
+.personaje .informacionPersonaje .tituloPersonaje h2 a:hover {
+  color: blue;
+}
+
+.personaje .informacionPersonaje .caracteristicasPersonaje {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+.personaje .informacionPersonaje .caracteristicasPersonaje p {
+  margin: 0.4rem;
+  font-weight: 600;
+}
+
+.personaje .informacionPersonaje .caracteristicasPersonaje p a {
+  text-decoration: none;
+  color: blue;
+}
+
+@media screen and (max-width: 576px) {
+  .personaje {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 22rem;
+  }
+  .personaje .imagenPersonaje {
+    width: 100%;
+  }
+  .personaje .imagenPersonaje img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0rem;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .personaje .informacionPersonaje .caracteristicasPersonaje {
+    text-align: center;
+  }
+  .personaje .informacionPersonaje .caracteristicasPersonaje p .displayNone {
+    display: block;
+  }
+}
+
+#botonMostrarPersonajes {
+  background-color: #b6eefc;
+  padding: 1rem 1.2rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.divBotonesNavegacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem;
+}
+
+.divBotonesNavegacion .botonNavegacion, .divBotonesNavegacion .numeroPaginaActual {
+  background-color: #b6eefc;
+  padding: 1rem 0rem;
+  width: 12rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0rem 1rem;
+}
+
+.divBotonesNavegacion .numeroPaginaActual {
+  width: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .divBotonesNavegacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 1rem;
+  }
+  .divBotonesNavegacion .botonNavegacion, .divBotonesNavegacion .numeroPaginaActual {
+    margin: 0.5rem;
+  }
+}
+
+.imagenTitulo {
+  width: 40rem;
+}
+
+#cabezaDeRickAntes, #cabezaDeRickDespues {
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+
+#cabezaDeRickDespues {
+  display: none;
+}
+
+#flecha {
+  display: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .imagenTitulo {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .imagenTitulo {
+    width: 15rem;
+  }
+}
+
+footer {
+  display: none;
+  margin-top: 2rem;
+  background-color: #b6eefc;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer p {
+  font-weight: 600;
+}
+
+html, body {
+  height: 100vh;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0rem;
+  padding: 0rem;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #212837;
+}
+
+.principal {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../img/fondodepantalla.png") no-repeat fixed center;
+}
+
+#personajes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */

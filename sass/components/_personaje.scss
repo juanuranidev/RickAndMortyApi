@@ -1,0 +1,90 @@
+.personaje{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 31.2rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: #b6eefc;
+    color: black;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    .imagenPersonaje{
+        height: 100%;
+        img{
+            width: 15rem;
+            height: 100%;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        }
+    }
+    .informacionPersonaje{
+        height: 100%;
+        width: 100%;
+        .tituloPersonaje{
+            margin: 1rem;
+            text-align: center;
+            h2{
+                font-size: 1.5rem;
+                font-weight: 800;
+                a{
+                     color: black;
+                     text-decoration: none;
+                }
+                a:hover{
+                    color: blue;
+                }
+            }        
+        }
+        .caracteristicasPersonaje{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            margin: 0rem 1rem 1rem 1rem;
+            p{
+                margin: 0.4rem;
+                font-weight: 600;
+                a{
+                    text-decoration: none;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {  
+    .personaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 22rem;
+        .imagenPersonaje{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                border-top-right-radius: 1rem;
+                border-bottom-left-radius: 0rem;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+            }
+        }
+        .informacionPersonaje{
+            .caracteristicasPersonaje{
+                text-align: center;
+                p{
+                    .displayNone{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
