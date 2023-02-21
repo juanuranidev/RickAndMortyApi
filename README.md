@@ -13,6 +13,7 @@ https://rickandmortyappjuan.netlify.app/
 # Features
 Beautiful and clean design<br>
 Responsive<br>
+Using the Rick and Morty API<br>
 
 # Data
 API from: https://rickandmortyapi.com
